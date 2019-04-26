@@ -61,10 +61,10 @@ def do_predict(request):
         }
         jsondata = json.dumps(data, ensure_ascii=False)
         return HttpResponse(jsondata)
-    if not os.path.exists('./lr.pkl'):
+    if not os.path.exists('../lr.pkl'):
         lr = create_model()
     else:
-        lr = joblib.load('./lr.pkl')
+        lr = joblib.load('../lr.pkl')
 
     a = request.POST.get('a')
     b = request.POST.get('b')

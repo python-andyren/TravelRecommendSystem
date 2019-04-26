@@ -62,7 +62,7 @@ def process_diary_num(arrlike):
 
 
 def create_model():
-    conn = pymysql.Connect(host='10.8.157.7', port=3306, user='root', password='root', db='CommandSysten',charset='utf8')
+    conn = pymysql.Connect(host='127.0.0.1', port=3306, user='root', password='dd..0202', db='project_travel',charset='utf8')
     # 读取数据库数据
     df = pd.read_sql('select * from spot', conn)
     conn.close()

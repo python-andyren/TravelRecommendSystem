@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'w#q+yky&=w8-k9t-+9_*^k*i$uf(x-o&z4amz@4ce$knx@8hv='
+STATIC_URL = '/static/'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Application definition
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'QuNa_Web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'laqu_shop_info',
+        'NAME': 'project_travel',
         'USER': 'root',
         'PASSWORD': 'dd..0202',
         'HOST': '127.0.0.1',
